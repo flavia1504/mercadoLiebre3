@@ -9,7 +9,4 @@ app.get("/", (req, res) => {
    return res.sendFile(path.join(__dirname, "/views/home.html"));
 })
 
-app.listen(PORT, () => console.log(`
-Server listen in port ${PORT}
-http://localhost:${PORT}
-`))
+app.listen(3000, () => console.log("esto fue exitoso"));

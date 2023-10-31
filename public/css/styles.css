@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
-/* VARIABLES  */
+
+
+
 :root {
       /* Variables de colores */
       --amarillo: #eac926;
@@ -8,8 +10,10 @@
       --gris-oscuro: #666;
       --gris-claro: #ebebeb;
       --verde: #39b54a;
+      
       /* Fuentes */
       --fuente: "Roboto", sans-serif;
+      
       /* Tamaños tipográficos */
       --parrafos: 12px;
       --titulos: 24px;
@@ -126,6 +130,7 @@ section div.contenedor-productos {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      
 }
 main section article {
       background-color: white;
@@ -162,20 +167,7 @@ main section article h5 {
       color: var(--gris-oscuro);
 }
 
-main section article div div.camion {
-      display: block;
-      font-size: 16px;
-      padding: 5px;
-      width: 20px;
-      height: 20px;
-      border: 1px solid var(--verde);
-      background-color: #fff;
-      border-radius: 50%;
-      position: absolute;
-      right: 20px;
-      top: -15px;
-      color: var(--verde);
-}
+
 
 /* FOOTER */
 footer {
@@ -196,6 +188,37 @@ footer span {
 }
 
 @media (min-width: 768px) {
+      header div.contenedor-logo div.logo {
+            max-width: 250px;
+      }
+      header div.contenedor-logo div.busqueda {
+            width: 40%;
+      }
+      header div.contenedor-logo p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      header div.burger-menu {
+            display: none;
+      }
+      header nav {
+            display: flex;
+            justify-content: space-between;
+      }
+      header nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+      }
+      header nav ul li {
+            margin: 5px;
+      }
+      main section article {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+}
+@media (min-width: 361px){
       header div.contenedor-logo div.logo {
             max-width: 250px;
       }
